@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
         int over = 0;
         String msg = "";
         for (User u : users) {
-            if(Double.parseDouble(u.result) > 80){
+            if(Double.parseDouble(u.result) > 80.00){
                 over+=1;
                 msg = Integer.toString(over);
             }
@@ -81,7 +81,7 @@ public class MainActivity extends AppCompatActivity {
 
         mRecyclerView = findViewById(R.id.user_recycler_view);
         mRecyclerView.setLayoutManager(new LinearLayoutManager(MainActivity.this));
-
+        
         button = findViewById(R.id.add_record_button);
         button.setOnClickListener(new View.OnClickListener() {
             @Override

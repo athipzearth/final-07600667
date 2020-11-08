@@ -39,7 +39,7 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.MyViewHolder> 
 
         holder.resultTextView.setText(user.result+" KM/H");
         holder.distanceandtimeTextView.setText(user.distance+" METERS, "+user.time+" SECONDS");
-        if(Double.parseDouble(user.result) > 80){
+        if(Double.parseDouble(user.result) > 80.00){
             holder.pig.setVisibility(View.VISIBLE);
         }
     }

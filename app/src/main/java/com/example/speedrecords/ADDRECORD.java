@@ -29,8 +29,8 @@ public class ADDRECORD extends AppCompatActivity {
                 duration_EditText = findViewById(R.id.duration_editTextNumber);
                 String distance = distance_EditText.getText().toString();
                 String time = duration_EditText.getText().toString();
-                double speed_d = ((Double.parseDouble(distance)/Double.parseDouble(time))*3600)/1000;
-                String result_text = String.format(Locale.getDefault(), "%.1f", speed_d);
+                double speed = ((Double.parseDouble(distance)/Double.parseDouble(time))*3600)/1000;
+                String result_text = String.format(Locale.getDefault(), "%.1f", speed);
                 String distance_text = String.format(Locale.getDefault(), "%.1f", Double.parseDouble(distance));
                 String time_text = String.format(Locale.getDefault(), "%.1f", Double.parseDouble(time));
 
