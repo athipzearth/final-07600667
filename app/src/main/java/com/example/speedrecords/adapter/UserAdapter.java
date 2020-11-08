@@ -1,7 +1,6 @@
 package com.example.speedrecords.adapter;
 
 import android.content.Context;
-import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,7 +13,6 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.speedrecords.R;
 import com.example.speedrecords.model.User;
 
-import org.w3c.dom.Text;
 
 public class UserAdapter extends RecyclerView.Adapter<UserAdapter.MyViewHolder> {
 

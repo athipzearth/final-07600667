@@ -11,7 +11,6 @@ import androidx.sqlite.db.SupportSQLiteDatabase;
 import com.example.speedrecords.model.User;
 import com.example.speedrecords.util.AppExecutors;
 
-import java.util.Calendar;
 
 @Database(entities = {User.class}, exportSchema = false, version = 1)
 public abstract class AppDatabase extends RoomDatabase {
@@ -48,15 +47,15 @@ public abstract class AppDatabase extends RoomDatabase {
                 db.userDao().addUser(
                         new User(
                                 0,
-                                "177.1",
-                                "31.0",
-                                "0.6"
+                                "999.9",
+                                "99.0",
+                                "99.9"
                         ),
                         new User(
                                 0,
-                                "72.0",
-                                "100.0",
-                                "5.0"
+                                "79",
+                                "999",
+                                "999"
                         )
                 );
             }
